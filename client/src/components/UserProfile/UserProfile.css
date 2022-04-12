@@ -1,0 +1,98 @@
+.userprofile-div{
+    width: 650px;
+    margin: auto;
+    margin-top: 90px;
+}
+
+.profile-top-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--darkBlue);
+    border-radius: 2px;
+    padding: 30px;
+    margin-bottom: 20px;
+    color: var(--white);
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.profile-top-right{
+    margin-left: 50px !important;
+}
+.profile-name{
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+.profile-email{
+    font-size: 23px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.followings{
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.follow-un-btn{
+    padding: 12px 0px;
+    width: 150px;
+    border-radius: 2px;
+    background-color: var(--back);
+    color: var(--white);
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.gallery{
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.profile-gallery-photo{
+    width: 320px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:1000px){
+
+    .userprofile-div{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .user-profile-content-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-top-right{
+        margin-left: 0px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .gallery{
+        width: 90vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .profile-gallery-photo{
+        width: 100%;
+    }
+}

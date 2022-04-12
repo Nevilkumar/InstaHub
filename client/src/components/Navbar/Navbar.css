@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.navbar a {
+  color: var(--white) !important;
+  text-decoration: none;
+  transition: 0.5s;
+  margin-bottom: -1px;
+}
+
+.navbar .topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1b31;
+  background-color: #17252A;
+  background-color: var(--darkBlue);
+  width: 100%;
+  height: 60px;
+  margin: auto;
+  /* box-shadow: 0px 6px 16px -6px rgba(1, 1, 1, 0.9); */
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.logo-icons{
+  font-size: 28px;
+  margin-right: 10px;
+  margin-bottom: -3px;
+}
+
+.brand-logo{
+    font-family: 'Grand Hotel', cursive;
+    letter-spacing: 5px;
+    margin-left: 20px;
+    font-size: 35px !important;
+    font-weight: normal;
+    margin-top: 4px;
+}
+  
+
+.nav-links {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+  padding: 24px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  transition: 0.5s;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+}
+
+.nav-icons{
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.navbar .logo {
+  width: 30px;
+  position: relative;
+  top: -5px;
+}
+
+.navbar .topnav .icon {
+  display: none;
+}
+
+.navbar .logout-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--darkBlue);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease-out;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  padding-top: 27px;
+  font-size: 19px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.menu-toggle .bar{
+  width:25px;
+  height: 3px;
+  margin:5px auto;
+  background-color: white;
+  transition: all 250ms ease-out;
+}
+
+
+@media screen and (max-width:1000px){
+
+  .navbar{
+      position: relative;
+  }
+  .navbar .topnav{
+      width: 100vw;
+      height: 60px;
+  }
+  .logo-icons{
+    font-size: 24px;
+    margin-right: 10px;
+    margin-bottom: -3px;
+  }  
+  .brand-logo{
+    letter-spacing: 4px;
+    font-size: 28px !important;
+    font-weight: normal;
+    margin-top: 4px;
+  }
+
+  .link-container{
+      position:absolute;
+      display: grid;
+      grid-template-columns: repeat(1,auto);
+      margin:0;
+      width: 100vw;
+      top:70px;
+      left:-100%;
+      opacity:1;
+      transition: all 0.5s ease;
+  }
+
+  .link-container.mobile-active{
+    left:0;
+    opacity:1;
+    transition: all 0.5s ease;
+  }
+
+  .logo-heading{
+    background-color: transparent !important;
+  }
+  .nav-links{
+    z-index: 2;
+    text-align: center;
+    line-height: 50px;
+    padding: 5px 0px;
+    margin: 0;
+    width: 100%;
+    background-color: var(--back) !important;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2.2px;
+    color: white;
+    display: table;
+  }
+  .navbar .logout-btn{
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-size: 19px;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  #mobile-menu{
+      position: absolute;
+      top:20%;
+      right: 5%;
+      cursor:pointer;
+      transform: translate(5%,20%);
+  }
+  .menu-toggle .bar{
+      display: block;
+  }
+
+  #mobile-menu.is-mobile-active .bar:nth-child(2){
+      opacity: 0;
+  }
+  #mobile-menu.is-mobile-active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+  }
+  #mobile-menu.is-mobile-active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+  }
+}

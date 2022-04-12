@@ -1,0 +1,59 @@
+.user-profile-content-div{
+    display: flex;
+}
+
+.user-profile-content-div{
+    width: 100%;
+}
+
+.image-profile{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.User-top-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--darkBlue);
+    border-radius: 2px;
+    padding: 30px;
+    margin-bottom: 20px;
+    color: var(--white);
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.upload-btn-pic{
+    background: var(--darkBlue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.upload-span-pic{
+    padding: 12px 10px;
+    width: 170px;
+    text-align: center;
+    color: var(--white);
+    background: var(--back);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.upload-input-pic{
+    position: absolute;
+    width: 170px;
+    padding: 10px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+
+    .profile-top-section{
+        display: flex;
+        flex-direction: column;
+    }
+}

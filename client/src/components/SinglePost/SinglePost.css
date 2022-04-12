@@ -1,0 +1,181 @@
+.home-post-card{
+    width: 600px;
+    margin: 20px auto;
+    background-color: var(--darkBlue);
+    color: var(--white);
+}
+
+.post-navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.postedby-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.postedby-name{
+    color: var(--white) !important;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+.navbar-profile-pic{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.delete-icon{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.post-image{
+    width: 600px;
+    height: 350px;
+}
+
+.card-content{
+    padding: 10px;
+}
+
+.likes-div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.like-icon{
+    font-size: 25px;
+    cursor: pointer;
+}
+.like-icon-red{
+    color: red !important;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.likes-span{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.content-div{
+    margin-bottom: 12px;
+}
+.content-title{
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+}
+
+.content-body{
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.comment-content{
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 0.8px;
+    margin-bottom: 5px;
+}
+.commentby{
+    font-size: 15px !important;
+}
+
+.comment-input{
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 2.5px solid var(--white);
+    padding-bottom: 8px;
+    margin-top: 10px;
+    height: 25px;
+    background: transparent;
+    color: var(--white);
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 8px;
+}
+.comment-input::placeholder{
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.loader{
+    margin-top: 90px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width:1000px){
+    .home-post-card{
+        width: 90%;
+    }
+
+    .post-navbar{
+        padding: 8px;
+    }
+
+    .postedby-name{
+        letter-spacing: 1px;
+        font-size: 19px;
+    }
+
+    .navbar-profile-pic{
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .delete-icon{
+        font-size: 22px;
+    }
+
+    .post-image{
+        width: 100%;
+        height: auto;
+    }
+    
+    .like-icon{
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .like-icon-red{
+        color: red !important;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    .likes-span{
+        margin-left: 7px;
+        font-size: 18px;
+    }
+    
+    .content-title{
+        font-size: 18px;
+    }
+    
+    .content-body{
+        font-size: 13px;
+    }
+
+    .comment-input{
+        border-bottom: 2px solid var(--white);
+    }
+}

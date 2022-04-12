@@ -1,0 +1,10 @@
+.auth-btn-pic{
+    background: var(--darkBlue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin: auto;
+    margin-top: 0px !important;
+    margin-bottom: 20px;
+}
