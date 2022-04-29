@@ -1,6 +1,5 @@
 # InstaHub
 
-### Email : nevil@gmail.com Password : nevil@gmail.com
 &nbsp;
 <img src="./Readme_Images/1.png">
 &nbsp;
